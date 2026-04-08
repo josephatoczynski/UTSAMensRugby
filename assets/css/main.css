@@ -1618,6 +1618,8 @@ input, select, textarea {
 			width: 100%;
 			margin: 0 0 2em 0;
 		}
+		
+		
 
 /* Button */
 
@@ -2091,7 +2093,7 @@ input, select, textarea {
 			font-weight: 900;
 			text-transform: uppercase;
 			color: #fff;
-			font-size: 2em;
+			font-size: 3.5em;  			/*Changing the font size on computer*/
 			letter-spacing: 0.25em;
 		}
 
@@ -2102,7 +2104,7 @@ input, select, textarea {
 			margin: 1.25em 0 0 0;
 			display: block;
 			letter-spacing: 0.2em;
-			font-size: 0.9em;
+			font-size: 2.7em;
 		}
 
 /* Nav */
@@ -2410,6 +2412,7 @@ input, select, textarea {
 
 /* XLarge */
 
+
 	@media screen and (max-width: 1680px) {
 
 		/* Basic */
@@ -2417,10 +2420,15 @@ input, select, textarea {
 			body, input, textarea, select {
 				font-size: 12pt;
 			}
+			#sponsor-image{
+		width: 25%;
+		height: 25%;
+			}
 
 	}
 
 /* Large */
+	
 
 	@media screen and (max-width: 1280px) {
 
@@ -2479,6 +2487,11 @@ input, select, textarea {
 			#copyright {
 				padding-top: 4em;
 				margin-top: 4em;
+			}
+
+		#sponsor-image{
+		width: 10%;
+		height: 10%;
 			}
 
 	}
@@ -2550,6 +2563,10 @@ input, select, textarea {
 				border-top: solid 1px rgba(255, 255, 255, 0.05);
 				padding-top: 4em;
 			}
+			#sponsor-image{
+		width: 25%;
+		height: 25%;
+			}
 
 	}
 
@@ -2559,6 +2576,10 @@ input, select, textarea {
 					border-top: 0;
 					padding-top: 0;
 				}
+		#sponsor-image{
+			width: 25%;
+			height: 25%;
+			}
 
 		}
 
@@ -2740,6 +2761,10 @@ input, select, textarea {
 				-ms-transform: translateX(0);
 				transform: translateX(0);
 			}
+			#sponsor-image{
+				width: 25%;
+				height: 25%;
+			}
 
 	}
 
@@ -2875,7 +2900,7 @@ input, select, textarea {
 			}
 
 				.homepage #header {
-					height: 20em;
+					height: 28em;
 				}
 
 		/* Logo */
@@ -2885,17 +2910,18 @@ input, select, textarea {
 				padding-left: 2em;
 				padding-right: 2em;
 			}
-
+				/* Changing the font size on mobile */
 				#logo h1 {
-					font-size: 1.5em;
-					letter-spacing: 0.2em;
+					font-size: 2.4em;
+					letter-spacing: 0.1em;
+					line-height: 0.8em;
 				}
 
 				#logo p {
-					margin: 1.25em 0 0 0;
+					margin: 0.5em 0 0 0;
 					display: block;
-					letter-spacing: 0.2em;
-					font-size: 0.9em;
+					letter-spacing: 0.1em;
+					font-size: 1.1em;
 				}
 
 		/* Intro */
@@ -2983,7 +3009,21 @@ input, select, textarea {
 	#header {
 			overflow: hidden;
 	}
+	#team-photo{
+		width: 100%;
 
+	}
+	#sponsor-image{
+		width: 25%;
+		height: 25%;
+	}
+	
+
+	}
+
+	#sponsor-image{
+		width: 25%;
+		height: 25%;
 	}
 
 	#header-bg {
@@ -3016,3 +3056,4 @@ input, select, textarea {
     object-fit: cover;
     z-index: 0;
 	}
+
