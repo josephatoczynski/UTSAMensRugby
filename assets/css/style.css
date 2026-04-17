@@ -343,3 +343,10 @@ footer {
   nav { padding: 0 16px; }
   .nav-logo { font-size: 1.1rem; }
 }
+.logo-class{
+  max-width: 120px;
+  width: 25%;
+  height: auto;
+}
+
+
