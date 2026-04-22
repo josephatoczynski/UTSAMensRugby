@@ -16,6 +16,20 @@
     <a href="/" class="nav-logo">
   <img src="/images/utsa-logo.PNG" alt="UTSA RFC" class="nav-logo-img" />
     </a>
+
+<nav>
+  <a href="/" class="nav-logo">
+    <img src="/images/utsa-logo.PNG" alt="UTSA RFC" class="nav-logo-img" style="height:32px; width:auto;" />
+  </a>
+  <button class="nav-toggle" id="navToggle" aria-label="Open menu">&#9776;</button>
+  <div class="nav-links" id="navLinks">
+    <a href="../" class="nav-btn">Home</a>
+    <a href="/recrutiment/" class="nav-btn active">Recruiting</a>
+    <a href="../scedule/" class="nav-btn">Scedule</a>
+    <a href="../leadership/" class="nav-btn">Leadership</a>
+  </div>
+</nav>
+
     <div class="nav-links">
       <a href="../" class="nav-btn">Home</a>
       <a href="/recrutiment/" class="nav-btn active">Recruiting</a>
@@ -43,9 +57,15 @@
     <a href="mailto:rugby@utsa.edu" class="cta-btn">Contact Us to Join</a>
   </div>
 
-  <footer>
+ <footer>
     <p>UTSA RFC &bull; Division I College Rugby &bull; Spring 2026</p>
   </footer>
+
+  <script>
+    document.getElementById('navToggle').addEventListener('click', function() {
+      document.getElementById('navLinks').classList.toggle('open');
+    });
+  </script>
 
 </body>
 </html>
