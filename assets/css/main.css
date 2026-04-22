@@ -2967,20 +2967,50 @@ input, select, textarea {
 
 		/* Footer */
 
-			#footer {
-				padding-bottom: 0;
-			}
+			/* Footer */
 
-				#footer header.style1 {
-					padding-bottom: 0;
-					margin-bottom: 2em;
-					border-bottom: 0;
-				}
+    #footer {
+        padding-bottom: 0;
+    }
 
-				#footer .feature-list {
-					border-top: 0;
-					padding-top: 0;
-				}
+        #footer header.style1 {
+            padding-bottom: 0;
+            margin-bottom: 2em;
+            border-bottom: 0;
+        }
+
+        #footer .feature-list {
+            border-top: 0;
+            padding-top: 0;
+        }
+
+        /* Make footer columns full width and stack on mobile */
+        #footer .feature-list .row {
+            display: flex;
+            flex-direction: column;
+        }
+
+        #footer .feature-list .col-6 {
+            width: 100%;
+        }
+
+        #footer .feature-list section {
+            padding-left: 4em;
+            padding-top: 2em;
+        }
+
+        /* Sponsor images wrap and resize */
+        #highlights .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        #sponsor-image {
+            width: 40% !important;
+            height: auto !important;
+            margin: 8px;
+        }
 
 		/* Copyright */
 
