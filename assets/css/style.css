@@ -342,11 +342,16 @@ footer {
   th:nth-child(5), td:nth-child(5) { display: none; }
   nav { padding: 0 16px; }
   .nav-logo { font-size: 1.1rem; }
-}
-.logo-class{
-  max-width: 120px;
-  width: 25%;
-  height: auto;
+} 
+/*─────────────── LOGO ─────────────── */
+.nav-logo {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
 }
 
-
+.nav-logo-img {
+  height: 36px;
+  width: auto;
+  object-fit: contain;
+}
