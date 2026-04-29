@@ -1,176 +1,130 @@
-<!DOCTYPE HTML>
-<html>
-	<head>
-		<title>UTSA Mens Rugby</title>
-	
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<link rel = "icon" type="image/png" href = "images/utsa-logo.PNG">
-		
-		
-	</head>
-	<body class="homepage is-preload">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>UTSA Men's Rugby</title>
+  <link rel="stylesheet" href="/assets/css/style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet"/>
+  <link rel="icon" type="image/png" href="/images/utsa-logo.PNG">
+</head>
+<body>
 
-		
-		<!-- Real Site -->
-	
-			<div id="page-wrapper">
+  <!-- ─── NAV ─── -->
+  <nav>
+    <a href="/" class="nav-logo">
+      <img src="/images/utsa-logo.PNG" alt="UTSA RFC" class="nav-logo-img" />
+    </a>
+    <button class="nav-toggle" id="navToggle" aria-label="Open menu">&#9776;</button>
+    <div class="nav-links" id="navLinks">
+      <a href="/"              class="nav-btn active">Home</a>
+      <a href="/recrutiment/"  class="nav-btn">Recruiting</a>
+      <a href="/scedule/"      class="nav-btn">Schedule</a>
+      <a href="/leadership/"   class="nav-btn">Leadership</a>
+    </div>
+  </nav>
 
-				<!-- Header -->
-					<section id="header" class="wrapper">
-						<video autoplay muted loop playsinline id="header-video">
-							<source src="videos/Rugby Edit.mp4" type="video/mp4">
-						</video>
+  <!-- ─── HERO ─── -->
+  <div class="hero">
+    <video autoplay muted loop playsinline class="hero-video">
+      <source src="/videos/Rugby Edit.mp4" type="video/mp4">
+    </video>
+    <div class="hero-content">
+      <div class="badge">San Antonio, TX</div>
+      <h1>UTSA MEN'S <span>RUGBY</span></h1>
+      <p class="subtitle">Build the House</p>
+      <a href="/recrutiment/" class="cta-btn hero-cta">Join the Team</a>
+    </div>
+  </div>
 
+  <!-- ─── STATS BAR ─── -->
+  <div class="stats-bar">
+    <div><span>6th</span>Conference Finish</div>
+    <div><span>4th</span>Yellow Rose</div>
+    <div><span>2026</span>Season</div>
+    <div><span>LSC</span>Conference</div>
+  </div>
 
-						<!-- Logo -->
-							<div id="logo">
-								<h1>UTSA Men's Rugby</h1>
-								<p>BUILD THE HOUSE</p> 
-							</div>
+  <!-- ─── TEAM PHOTO ─── -->
+  <section class="team-photo-section" style="padding-top:48px;">
+    <img src="/images/teamphoto.jpg" alt="UTSA Men's Rugby Team" class="team-photo" />
+  </section>
 
-						<!-- Nav -->
-							<nav id="nav">
-								<ul>
-									<li class="current"><a href="index.html">Home</a></li>
-									<li><a href="/recrutiment/">Recruitment</a></li>
-									<li><a href="/scedule/">Scedule</a></li>
-									<li><a href="/leadership/">Leadership</a></li>
-								</ul>
-							</nav>
+  <!-- ─── NEWS & UPDATES ─── -->
+  <section class="news-section">
+    <div class="section-header">
+      <div class="badge">Latest</div>
+      <h2 class="section-title">NEWS &amp; <span>UPDATES</span></h2>
+    </div>
+    <div class="cards-grid">
 
-					</section>
+      <div class="card">
+        <div class="card-top"><div class="initials">6TH</div></div>
+        <div class="card-body">
+          <h3>Conference Championships</h3>
+          <div class="role">March 28th &bull; Lonestar Conference 7's</div>
+          <p>The Roadrunners competed at the Lonestar Conference 7's tournament, finishing in 6th place against some of the best programs in the region.</p>
+        </div>
+      </div>
 
-				<!-- Intro -->
-					<section id="intro" class="wrapper style1">
-						
-						<div class="container">
-							
-							<p class="style2">
-								UTSA Mens Rubgy Club<br class="mobile-hide" />
-							</p>
-							<ul class="actions">
-								<li><a href="/recrutiment/" class="button style3 large">Join the team</a></li>
-							</ul>
-						</div>
-					</section>
+      <div class="card">
+        <div class="card-top"><div class="initials">4TH</div></div>
+        <div class="card-body">
+          <h3>Yellow Rose Showcase</h3>
+          <div class="role">Houston, Texas &bull; 7's Showcase</div>
+          <p>The Roadrunners faced tough competition at this year's Yellow Rose 7's Showcase, finishing 4th after a hard-fought 3rd/4th place match.</p>
+        </div>
+      </div>
 
-				<!-- Main -->
-					<section id="main" class="wrapper style2">
-		
-						<div class="container">
+    </div>
+  </section>
 
-							<!-- Image -->
-								<a  class="image featured">
-									<img src="images/teamphoto.jpg" alt="" width="50%" height="50%" />
-								</a>
+  <!-- ─── SPONSORS ─── -->
+  <section class="sponsors-section">
+    <div class="section-header">
+      <div class="badge">Thank You</div>
+      <h2 class="section-title">OUR <span>SPONSORS</span></h2>
+    </div>
+    <div class="sponsors-grid">
+      <img src="/images/bodyConcepts.webp"   alt="Body Concepts"   class="sponsor-img" />
+      <img src="/images/HoldenRoofing.png"   alt="Holden Roofing"  class="sponsor-img" />
+      <img src="/images/TheDivide.jpeg"      alt="The Divide"      class="sponsor-img" />
+      <img src="/images/VFWA.png"            alt="VFWA"            class="sponsor-img" />
+      <img src="/images/TheLewisGroup.jpg"   alt="The Lewis Group" class="sponsor-img" />
+    </div>
+  </section>
 
-							<!-- Features -->
-								<section id="features">
-									<header class="style1">
-										<h2>News and Updates</h2>
-										
-									</header>
-									<div class="feature-list">
-										<div class="row">
-											<div class="col-6 col-12-medium">
-												<section>
-													<h3 class="icon fa-comment">UTSA Finishes 6th at Conference Championships</h3>
-													<p>On March 28th, the Roadrunners competed at the Lonestar Conference 7's tournament. The Runners finished in 6th place</p>
-												</section>
-											</div>
-											<div class="col-6 col-12-medium">
-												<section>
-													<h3 class="icon solid fa-sync">Big Improvements at Yellow Rose Showcase</h3>
-													<p>The Roadrunners were put up aginst some tough competition at this years Yellow Rose 7's Showcase in Houston, Texas. The Runners finished 4th after a hard fought 3/4 place match</p>
-												</section>
-											</div>
+  <!-- ─── FOOTER ─── -->
+  <footer>
+    <div class="footer-contact">
+      <div class="footer-item">
+        <strong>Address</strong>
+        <p>UT San Antonio<br>One UTSA Circle<br>San Antonio, TX 78249</p>
+      </div>
+      <div class="footer-item">
+        <strong>Social</strong>
+        <p>
+          <a href="https://www.instagram.com/utsamensrugby/">@utsamensrugby</a><br>
+          <a href="https://www.facebook.com/UTSARUGBY">Facebook</a>
+        </p>
+      </div>
+      <div class="footer-item">
+        <strong>Email</strong>
+        <p><a href="mailto:UTSAMensRugbyVP@outlook.com">UTSAMensRugbyVP@outlook.com</a></p>
+      </div>
+      <div class="footer-item">
+        <strong>Phone</strong>
+        <p>(210) 632-5954</p>
+      </div>
+    </div>
+    <p>UTSA RFC &bull; Division I College Rugby &bull; Spring 2026</p>
+  </footer>
 
-										</div>
-									</div>
-								</section>
+  <script>
+    document.getElementById('navToggle').addEventListener('click', function () {
+      document.getElementById('navLinks').classList.toggle('open');
+    });
+  </script>
 
-						</div>
-					</section>
-
-				<!-- Highlights -->
-					<section id="highlights" class="wrapper style3">
-						<div class="title">Our Sponsors</div>
-						<div style="text-align: center;"class="container">
-						<a image>
-							<img src="images/bodyConcepts.webp" img id ="sponsor-image" alt="">
-							<img src="images/HoldenRoofing.png" img id="sponsor-image" alt="">
-							<img src="images/TheDivide.jpeg" img id="sponsor-image" alt="">
-							<img src="images/VFWA.png" img id="sponsor-image" alt="">
-							<img src="images/TheLewisGroup.jpg" img id="sponsor-image" alt="">
-						</a>
-							
-						</div>
-					</section>
-
-				<!-- Footer -->
-					<section id="footer" class="wrapper">
-						<div class="container">
-							<header class="style1">
-								<ul class="actions">
-									<li><a href="/recrutiment/" class="button style3 large">Join Us</a></li>
-								</ul>
-								<p>
-									Follow Link to Complete Recruitment Form
-								</p>
-							</header>
-							<div class="row">
-    <div class="col-12 col-12-medium">
-        <section class="feature-list">
-            <div class="row">
-                <div class="col-6 col-12-small">
-                    <section>
-                        <h3 class="icon solid fa-home">Address</h3>
-                        <p>
-                            UT San Antonio<br />
-                            One UTSA Circle<br />
-                            San Antonio, TX 78249
-                        </p>
-                    </section>
-                </div>
-                <div class="col-6 col-12-small">
-                    <section>
-                        <h3 class="icon solid fa-comment">Social</h3>
-                        <p>
-                            <a href="https://www.instagram.com/utsamensrugby/">@utsamensrugby</a><br />
-                            <a href="https://www.facebook.com/UTSARUGBY">facebook</a>
-                        </p>
-                    </section>
-                </div>
-                <div class="col-6 col-12-small">
-                    <section>
-                        <h3 class="icon solid fa-envelope">Email</h3>
-                        <p>
-                            <a href="mailto:UTSAMensRugbyVP@outlook.com">UTSAMensRugbyVP@outlook.com</a>
-                        </p>
-                    </section>
-                </div>
-                <div class="col-6 col-12-small">
-                    <section>
-                        <h3 class="icon solid fa-phone">Phone</h3>
-                        <p>(210) 632-5954</p>
-                    </section>
-                </div>
-                <div class="col-6 col-12-small">
-                   
-
-			</div>
-
-			<!-- Scripts -->
-				<script src="assets/js/jquery.min.js"></script>
-				<script src="assets/js/jquery.dropotron.min.js"></script>
-				<script src="assets/js/browser.min.js"></script>
-				<script src="assets/js/breakpoints.min.js"></script>
-				<script src="assets/js/util.js"></script>
-				<script src="assets/js/main.js"></script>
-
-	
-
-	</body>
+</body>
 </html>

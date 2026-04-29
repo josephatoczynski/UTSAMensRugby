@@ -19,7 +19,7 @@ body {
   min-height: 100vh;
 }
 
-/* ─── NAV ─────────────────────────────────── */
+/* ─── NAV ────────────────────────────────── */
 nav {
   background: var(--blue);
   display: flex;
@@ -32,7 +32,6 @@ nav {
   z-index: 100;
   box-shadow: 0 2px 12px rgba(0,0,0,0.25);
 }
-
 .nav-logo {
   display: flex;
   align-items: center;
@@ -42,17 +41,19 @@ nav {
 
 .nav-logo-img {
   height: 36px;
-  max-height: 36px;
+  max-height: 36px; 
   width: auto;
   object-fit: contain;
   display: block;
 }
 
-.nav-links {
-  display: flex;
+
+
+.nav-links { 
+  display: flex; 
   gap: 8px;
-  align-items: center;
-}
+  align-items: center; 
+ }
 
 .nav-btn {
   color: rgba(255,255,255,0.7);
@@ -69,76 +70,8 @@ nav {
 .nav-btn:hover { background: rgba(255,255,255,0.1); color: var(--white); }
 .nav-btn.active { background: var(--orange); color: var(--white); }
 
-/* ─── HERO (homepage) ────────────────────── */
-.hero {
-  position: relative;
-  height: 88vh;
-  min-height: 520px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  overflow: hidden;
-  background: var(--dark);
-}
-
-.hero-video {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  min-width: 100%;
-  min-height: 100%;
-  width: auto;
-  height: auto;
-  object-fit: cover;
-  z-index: 0;
-}
-
-.hero::after {
-  content: '';
-  position: absolute;
-  inset: 0;
-  background: linear-gradient(to bottom,
-    rgba(8,23,41,0.55) 0%,
-    rgba(8,23,41,0.35) 50%,
-    rgba(8,23,41,0.75) 100%);
-  z-index: 1;
-}
-
-.hero-content {
-  position: relative;
-  z-index: 2;
-  text-align: center;
-  color: var(--white);
-  padding: 0 20px;
-}
-
-.hero-content h1 {
-  font-family: 'Bebas Neue', sans-serif;
-  font-size: clamp(4rem, 12vw, 9rem);
-  letter-spacing: 0.05em;
-  line-height: 1;
-  text-shadow: 0 4px 32px rgba(0,0,0,0.4);
-}
-
-.hero-content h1 span { color: var(--orange); }
-
-.hero-content .subtitle {
-  margin-top: 10px;
-  font-size: 0.95rem;
-  letter-spacing: 0.3em;
-  text-transform: uppercase;
-  color: rgba(255,255,255,0.55);
-}
-
-.hero-cta {
-  margin-top: 32px;
-  display: inline-block;
-}
-
-/* ─── PAGE HEADER (inner pages) ─────────── */
-header,
-.page-header {
+/* ─── HEADER ─────────────────────────────── */
+header {
   background: var(--blue);
   color: var(--white);
   text-align: center;
@@ -147,7 +80,7 @@ header,
   overflow: hidden;
 }
 
-.page-header::before {
+header::before {
   content: '⬡';
   position: absolute;
   font-size: 320px;
@@ -157,24 +90,6 @@ header,
   pointer-events: none;
 }
 
-.page-header h2 {
-  font-family: 'Bebas Neue', sans-serif;
-  font-size: clamp(2.5rem, 7vw, 5rem);
-  letter-spacing: 0.06em;
-  color: var(--white);
-}
-
-.page-header h2 span { color: var(--orange); }
-
-.page-header p {
-  margin-top: 10px;
-  color: rgba(255,255,255,0.5);
-  font-size: 0.9rem;
-  letter-spacing: 0.15em;
-  text-transform: uppercase;
-}
-
-/* ─── BADGE ──────────────────────────────── */
 .badge {
   display: inline-block;
   border: 1px solid var(--orange);
@@ -185,6 +100,23 @@ header,
   border-radius: 2px;
   margin-bottom: 20px;
   text-transform: uppercase;
+}
+
+header h1 {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: clamp(3.5rem, 10vw, 7rem);
+  letter-spacing: 0.05em;
+  line-height: 1;
+}
+
+header h1 span { color: var(--orange); }
+
+.subtitle {
+  margin-top: 8px;
+  font-size: 0.9rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: rgba(255,255,255,0.5);
 }
 
 /* ─── STATS BAR ──────────────────────────── */
@@ -216,78 +148,36 @@ header,
   line-height: 1.1;
 }
 
-/* ─── SECTION HEADINGS ───────────────────── */
-.section-header {
-  text-align: center;
-  padding: 48px 20px 24px;
-}
-
-.section-title {
-  font-family: 'Bebas Neue', sans-serif;
-  font-size: clamp(2rem, 6vw, 4rem);
-  letter-spacing: 0.06em;
-  color: var(--blue);
-}
-
-.section-title span { color: var(--orange); }
-
-/* ─── MAIN / GENERIC CONTENT ─────────────── */
+/* ─── MAIN ───────────────────────────────── */
 main {
   max-width: 960px;
   margin: 0 auto;
   padding: 40px 20px 60px;
 }
 
-/* ─── TEAM PHOTO ─────────────────────────── */
-.team-photo-section {
-  max-width: 960px;
-  margin: 0 auto 12px;
-  padding: 0 20px;
+/* ─── PAGE TITLE (recruiting / leadership) ─ */
+.page-header {
+  text-align: center;
+  padding: 48px 20px 32px;
+  background: var(--blue);
+  color: var(--white);
 }
 
-.team-photo {
-  width: 100%;
-  display: block;
-  border-radius: 8px;
-  box-shadow: 0 8px 32px rgba(0,0,0,0.12);
+.page-header h2 {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: clamp(2.5rem, 7vw, 5rem);
+  letter-spacing: 0.06em;
+  color: var(--white);
 }
 
-/* ─── NEWS SECTION ───────────────────────── */
-.news-section {
-  background: var(--white);
-  padding-bottom: 48px;
-}
+.page-header h2 span { color: var(--orange); }
 
-/* ─── SPONSORS SECTION ───────────────────── */
-.sponsors-section {
-  background: var(--cream);
-  padding-bottom: 56px;
-}
-
-.sponsors-grid {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
-  gap: 28px;
-  max-width: 960px;
-  margin: 0 auto;
-  padding: 0 20px;
-}
-
-.sponsor-img {
-  height: 70px;
-  width: auto;
-  max-width: 160px;
-  object-fit: contain;
-  filter: grayscale(20%);
-  opacity: 0.85;
-  transition: opacity 0.2s, filter 0.2s;
-}
-
-.sponsor-img:hover {
-  opacity: 1;
-  filter: grayscale(0%);
+.page-header p {
+  margin-top: 10px;
+  color: rgba(255,255,255,0.5);
+  font-size: 0.9rem;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
 }
 
 /* ─── LEGEND ─────────────────────────────── */
@@ -352,17 +242,17 @@ td:first-child {
   border-radius: 3px;
 }
 
-.tag.home    { background: var(--orange); color: var(--white); }
-.tag.away    { background: var(--blue);   color: var(--white); }
-.tag.playoff { background: var(--dark);  color: var(--orange); border: 1px solid var(--orange); }
+.tag.home   { background: var(--orange); color: var(--white); }
+.tag.away   { background: var(--blue);   color: var(--white); }
+.tag.playoff { background: var(--dark); color: var(--orange); border: 1px solid var(--orange); }
 
 .result { font-family: 'Bebas Neue', sans-serif; font-size: 1rem; color: var(--muted); }
 
-/* ─── CARDS ──────────────────────────────── */
+/* ─── CARDS (recruiting / leadership) ────── */
 .cards-grid {
   max-width: 960px;
   margin: 0 auto;
-  padding: 8px 20px 60px;
+  padding: 40px 20px 60px;
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
   gap: 24px;
@@ -432,7 +322,6 @@ td:first-child {
 
 .info-section p { font-size: 0.9rem; color: #444; line-height: 1.7; margin-bottom: 20px; }
 
-/* ─── CTA BUTTON ─────────────────────────── */
 .cta-btn {
   display: inline-block;
   background: var(--orange);
@@ -451,56 +340,17 @@ td:first-child {
 
 /* ─── FOOTER ─────────────────────────────── */
 footer {
-  background: var(--dark);
-  color: rgba(255,255,255,0.45);
-  padding: 40px 20px 28px;
-  font-size: 0.8rem;
-  letter-spacing: 0.08em;
   text-align: center;
-}
-
-.footer-contact {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 40px;
-  max-width: 900px;
-  margin: 0 auto 28px;
-  text-align: left;
-}
-
-.footer-item strong {
-  display: block;
-  color: var(--white);
-  font-size: 0.7rem;
-  letter-spacing: 0.2em;
-  text-transform: uppercase;
-  margin-bottom: 6px;
-}
-
-.footer-item p {
-  font-size: 0.82rem;
-  color: rgba(255,255,255,0.45);
-  line-height: 1.6;
-}
-
-.footer-item a {
-  color: var(--orange);
-  text-decoration: none;
-}
-
-.footer-item a:hover { text-decoration: underline; }
-
-footer > p {
-  border-top: 1px solid rgba(255,255,255,0.07);
-  padding-top: 20px;
-  margin-top: 8px;
-  font-size: 0.72rem;
-  letter-spacing: 0.18em;
+  padding: 28px 20px;
+  background: var(--dark);
+  color: rgba(255,255,255,0.3);
+  font-size: 0.75rem;
+  letter-spacing: 0.15em;
   text-transform: uppercase;
 }
 
-/* ─── HAMBURGER ──────────────────────────── */
+
+/* ─── HAMBURGER BUTTON ───────────────────── */
 .nav-toggle {
   display: none;
   background: none;
@@ -540,35 +390,23 @@ footer > p {
 
   .nav-logo-img { height: 28px; }
 
-  /* Hero */
-  .hero { height: 70vh; min-height: 400px; }
-
-  /* Stats bar */
-  .stats-bar { flex-wrap: wrap; }
-  .stats-bar div { max-width: none; flex: 1 1 50%; }
-
-  /* Cards */
-  .cards-grid { padding-bottom: 40px; }
-
-  /* Sponsors */
-  .sponsor-img { height: 50px; max-width: 120px; }
-
-  /* Footer */
-  .footer-contact {
-    flex-direction: column;
-    gap: 24px;
-    align-items: center;
-    text-align: center;
-  }
-
-  /* Table mobile */
+  /* ─── TABLE MOBILE FIXES ─── */
   th:nth-child(4), td:nth-child(4),
   th:nth-child(5), td:nth-child(5) { display: none; }
 
   main { padding: 20px 12px 40px; }
+
   table { font-size: 0.78rem; }
+
   th { padding: 10px 8px; }
   td { padding: 10px 8px; }
+
   td:first-child { font-size: 0.9rem; }
+
   td:nth-child(3) { word-break: break-word; max-width: 100px; }
+
+  .stats-bar { flex-wrap: wrap; }
+  .stats-bar div { max-width: none; flex: 1 1 50%; }
 }
+ 
+/*─────────────── LOGO ─────────────── */
