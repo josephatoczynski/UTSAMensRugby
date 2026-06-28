@@ -41,8 +41,8 @@ nav {
 }
 
 .nav-logo-img {
-  height: 36px;
-  max-height: 36px;
+  height: 50px;
+  max-height: 50px;
   width: auto;
   object-fit: contain;
   display: block;
@@ -606,7 +606,7 @@ footer > p {
   display: flex;
   gap: 60px;
   width: max-content;
-  animation: marquee-scroll 22s linear infinite;
+  animation: marquee-scroll 50s linear infinite;
 }
 
 .marquee-track:hover {
