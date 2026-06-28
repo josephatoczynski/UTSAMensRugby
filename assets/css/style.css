@@ -274,11 +274,25 @@ main {
   margin: 0 auto;
   padding: 0 20px;
 }
-
-.sponsor-img {
-  height: 70px;
+.sponsor-arrow{
+  height: 150px;
   width: auto;
-  max-width: 160px;
+  max-width: 220px;
+  object-fit: contain;
+  filter: grayscale(20%);
+  opacity: 1.0;
+  transition: opacity 0.2s, filter 0.2s;
+
+
+}
+.sponsor-arrow:hover{
+  opacity: 1;
+  filter: grayscale(0%);
+}
+.sponsor-img {
+  height: 250px;
+  width: auto;
+  max-width: 340px;
   object-fit: contain;
   filter: grayscale(20%);
   opacity: 0.85;
@@ -552,6 +566,7 @@ footer > p {
 
   /* Sponsors */
   .sponsor-img { height: 50px; max-width: 120px; }
+  .sponsor-arrow { height: 25px; max-width: 60px; }
 
   /* Footer */
   .footer-contact {
@@ -571,4 +586,64 @@ footer > p {
   td { padding: 10px 8px; }
   td:first-child { font-size: 0.9rem; }
   td:nth-child(3) { word-break: break-word; max-width: 100px; }
+
+
+  .gallary {width: 200px;}
+  .gallary div {grid-gap: 5px; }
+}
+
+
+/* ─── SPONSOR MARQUEE ───────────────────── */
+.marquee-wrapper {
+  overflow: hidden;
+  width: 100%;
+  padding: 20px 0 56px;
+  -webkit-mask-image: linear-gradient(to right, transparent 0%, black 12%, black 88%, transparent 100%);
+  mask-image: linear-gradient(to right, transparent 0%, black 12%, black 88%, transparent 100%);
+}
+
+.marquee-track {
+  display: flex;
+  gap: 60px;
+  width: max-content;
+  animation: marquee-scroll 22s linear infinite;
+}
+
+.marquee-track:hover {
+  animation-play-state: paused;
+}
+
+.marquee-item {
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.marquee-item img {
+  height: 90px;
+  width: auto;
+  max-width: 200px;
+  object-fit: contain;
+  filter: grayscale(30%);
+  opacity: 0.8;
+  transition: opacity 0.2s, filter 0.2s;
+}
+
+.marquee-item img:hover {
+  opacity: 1;
+  filter: grayscale(0%);
+}
+
+@keyframes marquee-scroll {
+  0%   { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+@media (max-width: 640px) {
+  .marquee-item img {
+    height: 55px;
+    max-width: 120px;
+  }
+  .marquee-track { gap: 36px; }
 }

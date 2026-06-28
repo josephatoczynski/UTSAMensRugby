@@ -70,21 +70,24 @@
     </div>
   </section>
 
-  <!-- ─── SPONSORS ─── -->
-  <section class="sponsors-section">
-    <div class="section-header">
-      <div class="badge">Thank You</div>
-      <h2 class="section-title">OUR <span>SPONSORS</span></h2>
+ <!-- ─── SPONSORS ─── -->
+<section class="sponsors-section">
+  <div class="section-header">
+    <div class="badge">Thank You</div>
+    <h2 class="section-title">OUR <span>SPONSORS</span></h2>
+  </div>
+
+  <div class="marquee-wrapper">
+    <div class="marquee-track" id="marqueeTrack">
+      <div class="marquee-item"><img src="/images/bodyConcepts.webp"   alt="Body Concepts"></div>
+      <div class="marquee-item"><img src="/images/HoldenRoofing.png"   alt="Holden Roofing"></div>
+      <div class="marquee-item"><img src="/images/TheDivide.jpeg"      alt="The Divide"></div>
+      <div class="marquee-item"><img src="/images/VFWA.png"            alt="VFWA"></div>
+      <div class="marquee-item"><img src="/images/TheLewisGroup.jpg"   alt="The Lewis Group"></div>
+      <div class="marquee-item"><img src="/images/SaberNShield.PNG"    alt="Saber and Shield"></div>
     </div>
-    <div class="sponsors-grid">
-      <img src="/images/bodyConcepts.webp"   alt="Body Concepts"   class="sponsor-img" />
-      <img src="/images/HoldenRoofing.png"   alt="Holden Roofing"  class="sponsor-img" />
-      <img src="/images/TheDivide.jpeg"      alt="The Divide"      class="sponsor-img" />
-      <img src="/images/VFWA.png"            alt="VFWA"            class="sponsor-img" />
-      <img src="/images/TheLewisGroup.jpg"   alt="The Lewis Group" class="sponsor-img" />
-      <img src="/images/SaberNShield.PNG"    alt ="Saber and Shield" class="sponsor-img"/>
-    </div>
-  </section>
+  </div>
+</section>
 
   <!-- ─── FOOTER ─── -->
   <footer>
@@ -118,5 +121,11 @@
     });
   </script>
 
+
+<script>
+  const track = document.getElementById('marqueeTrack');
+  const clone = track.innerHTML;
+  track.innerHTML += clone;
+</script>
 </body>
 </html>
